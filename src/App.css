@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@400;700&family=Inter:wght@100..900&display=swap');
+
+*{
+  margin:0;
+  padding:0;
+  background-color: #02111b;
+  font-family:"Inter", sans-serif;
+}
+.navbar-container{
+  width:100%;
+  height: 50px;
+  padding-top: 30px;
+  background-blend-mode: lighten;
+  position: absolute;
+  top: 0;
+}
+.navbar-row{
+  display: flex;
+  justify-content:space-between;
+  width: 90%;
+  margin: 20px auto;
+}
+.logo-container{
+  width: 35px;
+  height:35px;
+  margin-right:20px;
+}
+.logo-container img{
+  width:100%;
+  height:100%
+}
+.nav-list-container ul{
+  list-style:none;
+  color:#607B96;
+  display:flex;
+  padding-top:10px;
+}
+.nav-list-container ul li{
+  margin-right:20px;
+  cursor:pointer;
+  font-size:18px;
+}
+.nav-list-container ul li:hover{
+  color:#43D9AD;
+  transition: ease-in-out 0.4s; 
+}
+.nav-list-container .nav-btn{
+  visibility: visible;
+  background: transparent;
+  opacity: 0;
+  color: #607B96;
+  padding: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+.my-socials{
+  position:absolute;
+  bottom:40px;
+  right: 30px;
+}
+.my-socials ul{
+  list-style:none;
+  padding-top:10px;
+  line-height: 4rem;
+}
+.my-socials ul li{
+  color: #607B96;
+  margin: 30px;
+}
+.my-socials ul li:hover{
+  color: #43D9AD;
+}
+.intro-container{
+  width:60%;
+  margin:12rem auto;
+  color: white;
+  text-align: left;
+  padding: 0;
+  align-items: center;
+}
+.intro-container h6{
+  font-size: 18px;
+  margin-left: 2px;
+  color: #43D9AD;
+}
+.intro-container h1{
+  font-size: 75px;
+  font-weight: bold;
+}
+.intro-container span{
+  color: #43D9AD;
+}
+.intro-container h2{
+  font-size: 45px;
+  font-weight: bold;
+}
+.intro-container p{
+  color: #607B96;
+  width: 920px;
+  margin-bottom: 30px;
+}
+.intro-container button{
+  border: 1px solid #43D9AD;
+  padding: 10px 20px;
+  border-radius: 10px;
+  width: auto;
+}
+.intro-container button:hover{
+  background-color: #1c8b68; 
+}
+.scroll-down{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: 2px solid #607B96;
+  border-radius: 50%;
+  padding: 20px;
+}
+
+
+
+@media only screen and (max-width:1024px) {
+  .nav-list-container .nav-btn{
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-list-container ul{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:1.5rem;
+    background-color: #02111b;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  .nav-list-container .responsive_nav{
+    transform: translateY(0);
+  }
+}
