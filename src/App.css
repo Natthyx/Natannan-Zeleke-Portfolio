@@ -6,13 +6,18 @@
   background-color: #02111b;
   font-family:"Inter", sans-serif;
 }
+:root{
+  --mainColor: #43D9AD;
+  --textColor : #607B96;
+}
 .navbar-container{
   width:100%;
   height: 50px;
   padding-top: 30px;
   background-blend-mode: lighten;
-  position: absolute;
+  position: sticky;
   top: 0;
+  opacity: .9;
 }
 .navbar-row{
   display: flex;
@@ -31,7 +36,7 @@
 }
 .nav-list-container ul{
   list-style:none;
-  color:#607B96;
+  color:var(--textColor);
   display:flex;
   padding-top:10px;
 }
@@ -41,23 +46,23 @@
   font-size:18px;
 }
 .nav-list-container ul li:hover{
-  color:#43D9AD;
+  color:var(--mainColor);
   transition: ease-in-out 0.4s; 
 }
 .nav-list-container .nav-btn{
   visibility: visible;
   background: transparent;
   opacity: 0;
-  color: #607B96;
+  color: var(--textColor);
   padding: 5px;
   outline: none;
   border: none;
   cursor: pointer;
 }
 .my-socials{
-  position:absolute;
+  position:fixed;
   bottom:40px;
-  right: 30px;
+  right: 40px;
 }
 .my-socials ul{
   list-style:none;
@@ -65,49 +70,52 @@
   line-height: 4rem;
 }
 .my-socials ul li{
-  color: #607B96;
+  color: var(--textColor);
   margin: 30px;
+  font-size: 25px;
 }
 .my-socials ul li:hover{
-  color: #43D9AD;
+  color: var(--mainColor);
 }
 .intro-container{
   width:60%;
   margin:12rem auto;
+  margin-bottom: 0px;
   color: white;
   text-align: left;
   padding: 0;
   align-items: center;
+  height: 100vh;
 }
 .intro-container h6{
   font-size: 18px;
   margin-left: 2px;
-  color: #43D9AD;
+  color: var(--mainColor);
 }
 .intro-container h1{
   font-size: 75px;
   font-weight: bold;
 }
 .intro-container span{
-  color: #43D9AD;
+  color: var(--mainColor);
 }
 .intro-container h2{
   font-size: 45px;
   font-weight: bold;
 }
 .intro-container p{
-  color: #607B96;
+  color: var(--textColor);
   width: 920px;
   margin-bottom: 30px;
 }
 .intro-container button{
-  border: 1px solid #43D9AD;
+  border: 1px solid var(--mainColor);
   padding: 10px 20px;
   border-radius: 10px;
   width: auto;
 }
 .intro-container button:hover{
-  background-color: #1c8b68; 
+  background-color: var(--mainColor); 
 }
 .scroll-down{
   margin-top: 20px;
@@ -117,9 +125,69 @@
   bottom: 20px;
   left: 50%;
   transform: translate(-50%, -50%);
-  border: 2px solid #607B96;
+  border: 2px solid var(--textColor);
   border-radius: 50%;
   padding: 20px;
+}
+.about-container{
+  width: 60%;
+  margin: 20px auto;
+  color: white;
+  height: 65vh;
+}
+.aboutme-row{
+  display: flex;
+}
+.img-holder{
+  width: 350px;
+  height: 400px;
+  border-right: 5px solid var(--mainColor);
+  border-bottom: 5px solid white;
+  border-radius: 50px;
+  margin-top: 90px;
+  margin-left: 50px;
+}
+.img-holder img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50px;
+  object-fit: cover;
+}
+.aboutme-text{
+  padding-top: 30px;
+  align-items: center;
+  margin-right: 70px;
+}
+
+.aboutme-text h2{
+  color: #ffffff;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: bold;
+}
+.aboutme-text p{
+  width: 600px;
+  font-size: 18px;
+  color: var(--textColor);
+  margin-bottom: 10px;
+}
+.aboutme-text span{
+ color: var(--mainColor);
+}
+.skill-list{
+  margin: 20px;
+  color: var(--textColor);
+  list-style:symbols(triangle);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  font-size: 15px;
+}
+.skill-list li{
+  border: 1px solid var(--mainColor);
+  border-radius: 10px;
+  text-align: center;
+  color: white;
 }
 
 
