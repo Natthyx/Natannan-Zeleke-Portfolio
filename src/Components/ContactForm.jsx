@@ -17,7 +17,7 @@ function ContactForm(){
   );
   const form = useRef();
 
-  const sendEmail = (e) => {
+function sendEmail(e){
     e.preventDefault();
 
     emailjs
@@ -32,7 +32,14 @@ function ContactForm(){
           console.log('FAILED...', error.text);
         },
       );
-  };
+
+      setMessage({
+        
+        fullname: "",
+        email: "",
+        message: ""
+})
+  }
   function handleOnChange(event){
     const {name , value} = event.target
     setMessage(prevValue => {
@@ -44,7 +51,7 @@ function ContactForm(){
   return(
     <>
     <div className='contact-container'>
-      <form ref={form}>
+      <form ref={form} onSubmit={sendEmail}>
       <div className='row'>
       <div className='name-container'>
         <div><label className='name'>Your Name: </label></div>
@@ -64,7 +71,7 @@ function ContactForm(){
         <div><textarea className='messageInput' name='message' onChange={handleOnChange} value={message.message} placeholder='Type your message...'></textarea></div>
         </div>
         <div className='sendBtn'>
-        <button type='submit' onClick={sendEmail}>Send Me</button></div>
+        <button type='submit'>Send Me</button></div>
       </form>
       </div>
     </>
