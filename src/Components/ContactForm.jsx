@@ -22,7 +22,7 @@ function ContactForm(){
 
     emailjs
       .sendForm('service_zsx04kj', 'template_gzlptnk', form.current, {
-        publicKey: 'YOUR_PUBLIC_KEY',
+        publicKey: 'fJJWSpx2xtkpZOeFp',
       })
       .then(
         () => {
