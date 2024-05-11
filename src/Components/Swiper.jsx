@@ -3,8 +3,9 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import { EffectCoverflow, Pagination } from 'swiper/modules';
+import certificates from '../Certificates';
 
-export default function Swipers() {
+export default function App() {
   return (
     <>
       <Swiper
@@ -15,26 +16,22 @@ export default function Swipers() {
         coverflowEffect={{
           rotate: 50,
           stretch: 0,
-          depth: 100,
+          depth: 50,
           modifier: 1,
           slideShadows: true,
         }}
-        pagination={true}
+        pagination={false}
         modules={[EffectCoverflow, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+      {
+        certificates.map(certificate =>(
+          <SwiperSlide key={certificate.id}>
+          <img src={certificate.img} />
         </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="https://swiperjs.com/demos/images/nature-4.jpg" />
-        </SwiperSlide>
+        ))
+      }
+        
       </Swiper>
     </>
   );

@@ -38,12 +38,12 @@ function Home() {
     };
 
     const handleScrollDown = () => {
-        const aboutSection = document.getElementById('about');
+        const aboutSection = document.getElementById('abouts');
         aboutSection.scrollIntoView({ behavior: 'smooth' });
     };
 
     return (
-        <div id='home'>
+        <div id='homes'>
             <Navbar />
             <div className='intro-container'>
                 <h6>{randomGreeting}, I am </h6>

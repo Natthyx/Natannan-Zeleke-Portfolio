@@ -43,6 +43,10 @@ const skills = [
         id:11,
         skill: "Illustartion"
     },
+    {
+        id:12,
+        skill : "Lightroom"
+    }
 
 ]
 
