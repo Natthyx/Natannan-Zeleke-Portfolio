@@ -545,4 +545,7 @@
   .nav-list-container .responsive_nav{
     transform: translateY(0);
   }
+  .row{
+    flex-direction: column;
+  }
 }

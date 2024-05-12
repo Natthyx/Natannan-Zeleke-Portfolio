@@ -1,4 +1,5 @@
 import skills from "../skills"
+import myPic from '../assets/myPic.png'
 
 function About(){
     return(
@@ -20,7 +21,7 @@ function About(){
                 </ul>
             </div>
             <div className="img-holder">
-                <img src="src\assets\myPic.png" alt="my-picture"></img>
+                <img src={myPic} alt="my-picture"></img>
             </div>
             
         </div>

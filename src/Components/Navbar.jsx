@@ -19,7 +19,7 @@ function Navbar(){
                         <li><a href="#about" onClick={() => handleScroll('abouts')}>About</a></li>
                         <li><a href="#project" onClick={() => handleScroll('projects')}>Projects</a></li>
                         {/* <li><a href="#award" onClick={() => handleScroll('awards')}>Achievements</a></li> */}
-                        <li><a href="#contact" onClick={() => handleScroll('contact')}>Contact</a></li>
+                        <li><a href="#contact" onClick={() => handleScroll('contacts')}>Contact</a></li>
                     </ul>
                 </div>
             </div>
