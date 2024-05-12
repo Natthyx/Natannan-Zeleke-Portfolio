@@ -6,7 +6,7 @@ const projects = [
         github : "https://github.com/Natthyx/ymovies_landingpage.git",
         link : "",
         techstack : ["React","HTML","CSS","Vite","MovieAPI"],
-        image : "./src/assets/YmoviesReactClone.gif",
+        image : "./public/assets/YmoviesReactClone.gif",
         type : "Web"
     },
     {
@@ -16,7 +16,7 @@ const projects = [
         github : "https://github.com/Natthyx/CraftyGems.git",
         link : "",
         techstack : ["HTML","CSS","Javascript"],
-        image : "./src/assets/CraftyGems.gif",
+        image : "./public/assets/CraftyGems.gif",
         type : "Web"
     },
     {
@@ -26,7 +26,7 @@ const projects = [
         github : "",
         link : "",
         techstack : ["ReactNative","OpenAI","NodeJs","Firebase","Nativewind"],
-        image : "./src/assets/Assister.gif",
+        image : "./public/assets/Assister.gif",
         type : "mobile"
     },
     {
@@ -36,7 +36,7 @@ const projects = [
         github : "https://github.com/Natthyx/Student_counseling_and_complaint_filing.git",
         link : "",
         techstack : ["React","Python","OpenAI API","Django","Django REST Framework"],
-        image : "./src/assets/SafeMic.gif",
+        image : "./public/assets/SafeMic.gif",
         type : "Web"
     }
 ]
