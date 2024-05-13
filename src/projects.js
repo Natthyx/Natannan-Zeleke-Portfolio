@@ -1,3 +1,4 @@
+import assister from './assets/Assister.gif'; 
 const projects = [
     {
         id:1,
@@ -26,7 +27,7 @@ const projects = [
         github : "",
         link : "",
         techstack : ["ReactNative","OpenAI","NodeJs","Firebase","Nativewind"],
-        image : "./src/assets/Assister.gif",
+        image : assister,
         type : "mobile"
     },
     {
