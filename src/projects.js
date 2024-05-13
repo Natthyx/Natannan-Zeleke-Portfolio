@@ -1,4 +1,8 @@
 import assister from './assets/Assister.gif'; 
+import ymovie from './assets/YmoviesReactClone.gif';
+import craftygems from './assets/CraftyGems.gif';
+import safemic from './assets/SafeMic.gif';
+
 const projects = [
     {
         id:1,
@@ -7,7 +11,7 @@ const projects = [
         github : "https://github.com/Natthyx/ymovies_landingpage.git",
         link : "",
         techstack : ["React","HTML","CSS","Vite","MovieAPI"],
-        image : "./src/assets/YmoviesReactClone.gif",
+        image : ymovie,
         type : "Web"
     },
     {
@@ -17,7 +21,7 @@ const projects = [
         github : "https://github.com/Natthyx/CraftyGems.git",
         link : "",
         techstack : ["HTML","CSS","Javascript"],
-        image : "./src/assets/CraftyGems.gif",
+        image : craftygems,
         type : "Web"
     },
     {
@@ -37,7 +41,7 @@ const projects = [
         github : "https://github.com/Natthyx/Student_counseling_and_complaint_filing.git",
         link : "",
         techstack : ["React","Python","OpenAI API","Django","Django REST Framework"],
-        image : "./src/assets/SafeMic.gif",
+        image : safemic,
         type : "Web"
     }
 ]
