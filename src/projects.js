@@ -9,7 +9,7 @@ const projects = [
         title:"Ymovies",
         desc : "A React-based project emulating the popular streaming website's interface and functionality. Features include search, category filters, and responsive design for seamless user experience across devices. Demonstrates proficiency in front-end development and user-centric design.",
         github : "https://github.com/Natthyx/ymovies_landingpage.git",
-        link : "",
+        link : "https://ymovies-online-streaming-platform.vercel.app",
         techstack : ["React","HTML","CSS","Vite","MovieAPI"],
         image : ymovie,
         type : "Web"
@@ -40,7 +40,7 @@ const projects = [
         desc : "A student counseling and complaint platform crafted by a team of 8 using React and Django. Offering online counseling with AI integration, students can seek support remotely or schedule face-to-face meetings. Anonymously, they can voice their concerns through complaint forms. It prioritizes student well-being, providing a safe space for expression and support.",
         github : "https://github.com/Natthyx/Student_counseling_and_complaint_filing.git",
         link : "",
-        techstack : ["React","Python","OpenAI API","Django","Django REST Framework"],
+        techstack : ["React","Python","OpenAI","Django","Django REST-Framework"],
         image : safemic,
         type : "Web"
     }

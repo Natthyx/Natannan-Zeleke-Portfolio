@@ -12,6 +12,7 @@ function ContactForm(){
     {
       fullname: "",
       email: "",
+      subject: "",
       message: ""
     }
   );
@@ -37,6 +38,7 @@ function sendEmail(e){
         
         fullname: "",
         email: "",
+        subject: "",
         message: ""
 })
   }
