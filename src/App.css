@@ -637,7 +637,7 @@
 }
 @media(max-width:450px){
   .navbar-container{
-    width: 95%;
+    width: 100%;
   }
   .intro-container{
     width: 95%;
@@ -645,11 +645,11 @@
   }
   .intro-container h1{
     font-size: 1.5rem;
-    width: 380px;
+    width: 370px;
   }
   .intro-container h2{
     font-size: .9rem;
-    width: 380px;
+    width: 370px;
   }
   .intro-container p{
     width: 360px;
@@ -672,7 +672,7 @@
     background: transparent;
   }
   .aboutme-text p{
-    width: 380px;
+    width: 370px;
   }
   .skill-list{
     width: 360px;
@@ -725,7 +725,7 @@
     margin-bottom: 10px;
   }
   .project-detail .desc{
-    width: 380px;
+    width: 370px;
     padding: 10px;
     font-size: 16px;
     
