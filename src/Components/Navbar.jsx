@@ -12,7 +12,7 @@ function Navbar(){
         <div className="navbar-container">
             <div className="navbar-row">
                 <div className="logo-container">
-                    <a href="#home" onClick={() => handleScroll('homes')}><img src="../MyLogo.png" alt="my-logo"></img></a>
+                    <a href="#home" onClick={() => handleScroll('homes')}><img src="../MyLogo.png" alt="Natannan Zeleke's fullstack web development website logo"></img></a>
                 </div>
                 <div className="nav-list-container">
                     <ul ref={navRef}>
