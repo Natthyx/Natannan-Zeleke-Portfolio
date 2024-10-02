@@ -7,10 +7,10 @@ function ProjectComponent(props){
         <a href={props.link} target="blank">
         <div className="projects-row">
         {props.type === "mobile" ? <div className="mobileImg-holder">
-        <img src={props.image} alt="Natannan Zeleke's projectDemo"></img>
+        <img src={props.image} loading="lazy" alt="Natannan Zeleke's projectDemo"></img>
         </div> :
             <div className="projectImg-holder">
-            <img src={props.image} alt="Natannan Zeleke's fullstack developer projectDemo"></img>
+            <img src={props.image} loading="lazy" alt="Natannan Zeleke's fullstack developer projectDemo"></img>
             </div>}
             <div className="project-detail">
                 <h3>#{props.id}</h3>
