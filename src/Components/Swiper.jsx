@@ -27,7 +27,7 @@ export default function App() {
       {
         certificates.map(certificate =>(
           <SwiperSlide key={certificate.id}>
-          <img src={certificate.img} />
+          <img src={certificate.img} alt="Natannan Zeleke's certificate picture" />
         </SwiperSlide>
         ))
       }
