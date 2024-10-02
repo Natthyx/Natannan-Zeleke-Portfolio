@@ -21,7 +21,7 @@ function About(){
                 </ul>
             </div>
             <div className="img-holder">
-                <img src={myPic} alt="my-picture"></img>
+                <img src={myPic} alt="Natannan Zeleke's picture"></img>
             </div>
             
         </div>
