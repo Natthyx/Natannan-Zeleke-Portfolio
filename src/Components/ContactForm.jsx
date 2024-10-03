@@ -23,7 +23,7 @@ function sendEmail(e){
 
     emailjs
       .sendForm('service_zsx04kj', 'template_gzlptnk', form.current, {
-        publicKey: 'fJJWSpx2xtkpZOeFp',
+        publicKey: '9AEFyUXam2b44Ddll',
       })
       .then(
         () => {
